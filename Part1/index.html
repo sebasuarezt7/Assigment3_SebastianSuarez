@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part1</title>
+    <link rel="stylesheet" href="/Part1/style.css">
+</head>
+<body>
+    <form action="/Part1/index.html" id="myForm" name="myForm">
+        <h1>Sales Tax Calculator</h1>
+        <p>Enter Subtotal and Tax Rate and click "Calculate"</p>
+        <div>
+            <label for="input1">Subtotal:</label>
+            <input type="text" id="input1">
+            <span id="error1">*</span>
+        </div>
+        <div>
+            <label for="input2">Tax Rate</label>
+            <input type="text" id="input2">
+            <span id="error2">*</span>
+        </div>
+        <div>
+            <label for="salesTax">Sales Tax</label>
+            <input type="text" id="salesTax">
+        </div>
+        <div>
+            <label for="total">Total</label>
+            <input type="text" id="total">
+        </div>
+        <div>
+            <button type="submit" id="calculate" value="Calculate">Calculate</button>
+            <button type="button" id="clear">Clear</button>
+        </div>
+        <p>© Sebastian Suarez / n01706712</p>
+    </form>
+
+    <script src="/Part1/java.js"></script>
+</body>
+</html>

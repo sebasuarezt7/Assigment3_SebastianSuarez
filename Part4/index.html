@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Request</title>
+    <link rel="stylesheet" href="/Part4/style.css">
+</head>
+<body>
+    <form id="reservationForm">
+        <h1>Reservation Request</h1>
+
+        <!-- General Information Section -->
+        <fieldset>
+            <legend>General Information</legend>
+            
+            <label for="arrivalDate">Arrival date:</label>
+            <input type="date" id="arrivalDate" name="arrivalDate">
+            <br><br>
+
+            <label for="nights">Nights:</label>
+            <input type="text" id="nights" name="nights">
+            <span id="nightsError">*</span>
+            <br><br>
+
+            <label for="adults">Adults:</label>
+            <select id="adults" name="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br><br>
+
+            <label for="children">Children:</label>
+            <select id="children" name="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </fieldset>
+
+        <!-- Preferences Section -->
+        <fieldset>
+            <legend>Preferences</legend>
+            
+            <label>Room type:</label>
+            <input type="radio" id="standard" name="roomType" value="Standard" checked>
+            <label for="standard">Standard</label>
+            <input type="radio" id="business" name="roomType" value="Business">
+            <label for="business">Business</label>
+            <input type="radio" id="suite" name="roomType" value="Suite">
+            <label for="suite">Suite</label>
+            <br><br>
+
+            <label>Bed type:</label>
+            <input type="radio" id="king" name="bedType" value="King" checked>
+            <label for="king">King</label>
+            <input type="radio" id="double" name="bedType" value="Double Double">
+            <label for="double">Double Double</label>
+            <br><br>
+
+            <input type="checkbox" id="smoking" name="smoking">
+            <label for="smoking">Smoking</label>
+        </fieldset>
+
+        <!-- Contact Information Section -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <span id="emailError">*</span>
+            <br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+            <span id="phoneError">*</span>
+        </fieldset>
+
+        <button type="submit" id="submitRequest">Submit Request</button>
+    </form>
+
+    <footer>
+        <p>© Sebastian Suarez / n01706712</p>
+    </footer>
+
+    <script src="/Part4/java.js"></script>
+</body>
+</html>
